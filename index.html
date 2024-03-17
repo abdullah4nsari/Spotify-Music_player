@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="spotify.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div class="left">
+          <div class="home border bg-color p-1">
+            <ul class="m-1">
+              <img class="invert" src="logo.svg" alt="spotify" />
+              <li class="flex item-center">
+                <img class="invert" src="home.svg" alt="home" />Home
+              </li>
+              <li class="flex item-center">
+                <img class="invert" src="search.svg" alt="search" />Search
+              </li>
+            </ul>
+          </div>
+          <div class="library bg-color border">
+            <div class="heading item-center">
+              <img class="invert icon-size" src="library.svg" alt="library" />
+              <h2 class="g-color">Your Library</h2>
+            </div>
+            <div class="playlist">
+              <ol class="songsList"></ol>
+            </div>
+            <!-- <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/">
+                <span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/privacy/">
+                <span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div> -->
+          </div>
+        </div>
+        <div class="right border">
+          <div class="nav item-center">
+            <div>
+              <button class="navbtn">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="navbtn">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="signlog">
+              <button>Sign up</button>
+              <button>Log in</button>
+            </div>
+          </div>
+          <div class="item-container">
+            <div class="playlist-main">
+              <h2>Spotify Playlists</h2>
+            </div>
+            <div class="playlist-items justify-content">
+              <div class="p-item">
+                <div class="inner-item">
+                  <div class="circle-container display-none">
+                    <div class="play-button"></div>
+                  </div>
+                  <img src="todayshit.jpeg" alt="" />
+                  <h3>Today's Top Hit</h3>
+                  <p>SZA is on top of the Hottest 50!</p>
+                </div>
+              </div>
+              <div class="p-item">
+                <div class="inner-item">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002ec94bf1083be30463d4b731d"
+                    alt=""
+                  />
+                  <h3>Chillhop</h3>
+                  <p>
+                    Blissed out beats and head nodding grooves - Relax, study
+                    and vibe.
+                  </p>
+                </div>
+              </div>
+              <div class="p-item">
+                <div class="inner-item">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d"
+                    alt=""
+                  />
+                  <h3>Chillout Lounge</h3>
+                  <p>Just lean back and enjoy relaxed beats.</p>
+                </div>
+              </div>
+              <div class="p-item">
+                <div class="inner-item">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f00000002d771dc645afe9b87978b1d3e"
+                    alt=""
+                  />
+                  <h3>All Out 2020s</h3>
+                  <p>The biggest songs of the 2020s.</p>
+                </div>
+              </div>
+              <div class="main-footer">
+                <ul>
+                  <p>Company</p>
+                  <li>About</li>
+                  <li>Jobs</li>
+                  <li>For the Record</li>
+                </ul>
+                <ul>
+                  <p>Communities</p>
+                  <li>For Artists</li>
+                  <li>Developers</li>
+                  <li>Advertising</li>
+                  <li>Investers</li>
+                  <li>Vendors</li>
+                </ul>
+                <ul>
+                  <p>Useful links</p>
+                  <li>Support</li>
+                  <li>Free Mobile App</li>
+                </ul>
+                <div class="social-media">
+                  <div class="account justify-content item-center">
+                    <img src="insta.svg" alt="instagram" />
+                  </div>
+                  <div class="account justify-content item-center">
+                    <img src="twitter.svg" alt="twitter" />
+                  </div>
+                  <div class="account justify-content item-center">
+                    <img src="facebook.svg" alt="facebook" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player">
+        <div class="currentSong">
+          <button><img class="invert" src="disc.svg" alt=""></button>
+          <div class="current-songInfo">
+            <div class="CurrentsongName">Song Name</div>
+            <div class="Artist h-2">Unknown</div>
+          </div>
+        </div>
+        <div class="playingsong">
+          <div class="seekbar">
+            <div class="circle"></div>
+          </div>
+        <div class="buttons">
+          <img class="invert-low" src="backward.svg" alt="" />
+          <button>
+            <img class="play" src="playpause.svg" alt="" />
+          </button>
+          <img class="invert-low" src="forward.svg" alt="" />
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="spotify.js"></script>
+  </body>
+</html>
